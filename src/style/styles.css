@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    font-family: 'Outfit';
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('../assets/fonts/Outfit.ttf') format('truetype');
+}
+
+body{
+    background: hsl(217, 54%, 11%);
+    padding: 4% 0 0 0;
+}
+
+.container{
+    margin: auto;
+    width: 25%;
+    background: hsl(216, 50%, 16%);
+    border-radius: 15px;
+    padding: 25px 25px 25px 25px;
+}
+
+.image-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.figure-container{
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+}
+
+.NFT-image{
+    width: 100%;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.view-icon-container{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 99%;
+    border-radius: 15px;
+    background-color: rgba(0, 255, 247, 0.6);
+    transition: all 500ms ease;
+    opacity: 0;
+}
+
+.view-icon-container:hover{
+    opacity: 1;
+}
+
+.view-icon{
+    margin: 42.5%;
+}
+
+.data-container{
+    padding: 20px 0 0 0;
+}
+
+.NFT-name{
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    font-size: 22px;
+    text-decoration: none;
+    transition: all 500ms ease;
+}
+
+.NFT-name:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+.NFT-description-container{
+    padding: 15px 0 15px 0;
+}
+
+.NFT-description{
+    font-size: 18px;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+
+.columns-price-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px 0 15px 0;
+}
+
+.price-NFT-container{
+    display: flex;
+    align-items: center;
+}
+
+.price-NFT-container img{
+    height: 80%;
+}
+
+.price-NFT{
+    color: hsl(178, 100%, 50%);
+    font-weight: 400;
+    padding-left: 7.5px;
+}
+
+.date-NFT-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.date-NFT-container img{
+    height: 80%;
+}
+
+.date-NFT{
+    font-size: 18px;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    padding-left: 7.5px;
+}
+
+.line-container{
+    padding: 7.5px 0 20px 0;
+}
+
+.line-container hr{
+    border-color: hsl(215, 32%, 27%);
+}
+
+.author-container{
+    display: flex;
+    align-items: center;
+}
+
+.author-container img{
+    height: 35px;
+    border-radius: 50%;
+    border-color: hsl(0, 0%, 100%);
+    border-width: 0.5px;
+    border-style: solid;
+}
+
+.info-author{
+    padding-left: 10px;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+
+.info-author a{
+    color: hsl(0, 0%, 100%);
+    font-weight: 300;
+    text-decoration: none;
+    transition: all 500ms ease;
+}
+
+.info-author a:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+.footer-page{
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-page p{
+    font-family: 'Outfit';
+    color: hsl(0, 0%, 100%);
+}
+
+.footer-page p a{
+    text-decoration: none;
+    color: hsl(215, 51%, 70%);
+    transition: all 500ms ease;
+}
+
+.footer-page p a:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        background: hsl(217, 54%, 11%);
+        padding: 4% 0 4% 0;
+    }
+
+    .container{
+        margin: auto;
+        width: 77.5%;
+        background: hsl(216, 50%, 16%);
+        border-radius: 15px;
+        padding: 25px 25px 25px 25px;
+    }
+
+    .footer-page{
+        padding-top: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
